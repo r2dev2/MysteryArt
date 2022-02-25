@@ -34,6 +34,14 @@ const drawInitialCircle = (pixels, cx, cy) => {
   }
 };
 
+const starts = {
+  circle: drawInitialCircle,
+  venn: (pixels, mx, my) => {
+    drawInitialCircle(pixels, mx - r / 2, my);
+    drawInitialCircle(pixels, mx + r / 2, my);
+  }
+};
+
 const generateInitialPixels = pixels => {
   const width = pixels.length;
   const height = pixels[0].length;
@@ -47,8 +55,8 @@ const generateInitialPixels = pixels => {
     }
   }
 
-  drawInitialCircle(pixels, mx - r / 2, my);
-  drawInitialCircle(pixels, mx + r / 2, my);
+  const paramStart = new URLSearchParams(window.location.search).get('start') ?? 'circle';
+  (starts[paramStart] ?? starts.circle)(pixels, mx, my);
 
   return pixels;
 };
