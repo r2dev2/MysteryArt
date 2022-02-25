@@ -12,6 +12,11 @@ https://r2dev2.github.io/MysteryArt?start=circle
 
 ![S(50) from starting with a circle](./img/start_from_circle.png)
 
+### Venn Diagram
+
+https://r2dev2.github.io/MysteryArt?start=venn
+![S(50) from starting with a venn diagram](./img/venn.png)
+
 ## Algorithm
 
 The algorithm is fairly simple:
