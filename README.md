@@ -23,4 +23,4 @@ The algorithm is fairly simple:
 
 1. let S(t) be the state of the picture in the form of the opacity of each pixel
 2. let S(0) be any geometric shape
-3. let S(t + 1) = (opacity increase factor = 1.5) * (the average opacity of neighbors in a square around the pixel) for each pixel in S(t)
+3. let S(t + 1) = (opacity increase factor = 1.5) * (the average opacity of neighbors in a square around the pixel) for each pixel in S(t) and if the new opacity is > 1, reset it to 0
