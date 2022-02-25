@@ -7,6 +7,9 @@ Mystery generative art I conjured up for no particular reason.
 The following samples were generated from a starting geometric shape.
 
 ### Circle
+
+https://r2dev2.github.io/MysteryArt?start=circle
+
 ![S(50) from starting with a circle](./img/start_from_circle.png)
 
 ## Algorithm
